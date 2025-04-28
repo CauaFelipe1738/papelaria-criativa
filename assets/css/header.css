@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+header{
+    background-color:#F6C616;
+}
+.logo img{
+    width: 48vw;
+    height: auto;
+}
+header .header-main{
+    max-width: 1024px;
+    margin: auto;
+    padding: 33px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left .logo{
+    margin-right: 20px;
+}
+.header-left .logo:hover{
+    opacity: 0.8;
+}
+.header-left ul{
+    display: none;
+    align-items: center;
+    gap: 40px;
+}
+.header-left li a{
+    text-decoration: none;
+    color: #7f7f7f;
+} 
+.header-left li a:hover{
+    opacity: 0.8;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header-right .menu-burger{
+    margin-left: 12px;
+}
+.header-right .menu-burger .on{
+    display: none;
+}
+.header-right .menu-burger.active .on{
+    display: block;
+}
+.header-right .menu-burger.active .off{
+    display: none;
+}
+.header-menu {
+    background-color: #115695;
+    display: none;
+}
+.header-menu a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.9rem;
+    padding: 24px 32px;
+    border-bottom: 1px solid #d9d9d9;
+    background-image: url('../images/ui/arrow-up-right.png');
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right 32px center;
+}
+.header-right .on:hover, .header-right .off:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.header-right a:hover{
+    opacity: 0.8;
+}
+@media(width>714px){
+    .header-warning .desktop{
+        display: block;
+    }
+    .header-warning .mobile{
+        display: none;
+    }
+}
+@media(width>1024px){
+    .header-search{
+        display: none;
+    }
+    .header-left ul{
+        display: flex;
+    }
+    .header-right .search{
+        display: block;
+    }
+    .header-right .menu-burger{
+        display: none;
+    }
+    .header-menu{
+        display: none !important;
+    }
+}
+
+
