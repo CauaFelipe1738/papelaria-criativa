@@ -21,7 +21,7 @@ main{
     width: 2rem;
     height: auto;
 }
-.already, .not{
+.login-box{
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -35,8 +35,9 @@ main{
     box-shadow: 0px 0px 10px #d9d9d9;
 }
 .title{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
+    color: #115695;
 }
 .title span{
     color: #F6C616;
@@ -52,7 +53,7 @@ form{
     border: none;
     font-size: 1rem;
     font-weight: bold;
-    padding: 1rem 10rem;
+    padding: .5rem 5rem;
     border-radius: 0.5rem;
     align-self: center;
 }
@@ -62,25 +63,85 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 200;
 }
 form .input img{
     width: 1.2rem;
     height: auto;
 }
+form .insert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 input{
     border: 1px solid #d9d9d9;
     width: 80vw;
-    margin: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     background-image: url(../imgs/pen-grey-icon.png);
     border-radius: 1rem;
     background-repeat: no-repeat;
     background-position: 9px;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
+
 .forgot{
+    display: flex;
+    align-items: center;
     margin: 1rem 2rem;
+    font-weight: 100;
 }
+
+.forgot img{
+    height: 1rem;
+    width: auto;
+}
+
 .quick-login{
     margin: 1rem 2rem;
+}
+
+@media(width>1024px){
+    main{flex-direction: row;}
+
+    .login-box{
+        width: 45vw;
+        height: 70vh;
+        justify-content: flex-start;
+    }
+
+    input{width: 30vw;}
+
+    .title{font-size: 1.5rem;}
+
+    .subtitle{
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+    }
+
+    form{align-items: end;}
+
+    .forms .insert{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form .insert p{
+        padding-bottom: 1rem;
+        margin-right: .5rem;
+    }
+
+    .forms button{
+        font-size: 2rem;
+        padding: .5rem 8rem;
+        margin-top: 3rem;
+    }
+
+    .quick-login a img{
+        margin-top: 2rem;
+        height: 4rem;
+        width: auto;
+    }
 }
