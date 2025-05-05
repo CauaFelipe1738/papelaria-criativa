@@ -111,6 +111,7 @@ footer{
     height: 20vh;
     width: 100vw;
     padding: 2rem;
+    overflow: hidden;
 }
 
 @media(width>1024px){

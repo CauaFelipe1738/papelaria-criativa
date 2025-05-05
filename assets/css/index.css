@@ -2,16 +2,24 @@ body{
     overflow-x: hidden;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 .banner{
     height: 20vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     margin-bottom: 5vh;
+    overflow: hidden;
 }
 .banner img{
     height: 25vh;
-    width: 125vw;
+    width: 100vw;
+    overflow: hidden;
 }
 .grid{
     display: grid;
@@ -61,4 +69,19 @@ body{
     font-size: 1rem;
     padding-left: .6rem;
     font-weight: 500;
+}
+
+@media(width>1024px){
+    .banner{margin-bottom: 20vh;}
+
+    .banner img{height: 40vh;}
+
+    main{margin: 0 8rem;}
+
+    main .title{font-size: 3rem;}
+
+    main .grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+    }
 }
