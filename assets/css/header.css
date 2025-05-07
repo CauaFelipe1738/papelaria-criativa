@@ -139,4 +139,18 @@ header .header-main ul{list-style: none;}
     }
 }
 
+footer{
+    background-color: #115695;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+
 

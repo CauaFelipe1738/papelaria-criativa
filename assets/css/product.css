@@ -1,17 +1,45 @@
+body{overflow-x: hidden;}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
 .product-img img{
     width: 45vw;
     max-height: 35vh;
 }
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 4rem 1rem;
+}
 .product-title{
     margin: .6rem;
-    font-size: 2rem !important;
+    font-size: 2rem ;
+    font-weight: 600;
+}
+.product-desc{
+    color: #a1a1a1;
+    margin-bottom: 1rem;
+}
+.product-count{
+    display: flex;
+    flex-direction: row;
 }
 .product-price{
     margin: .6rem;
     font-size: 2rem !important;
+    color: #F6C616;
+    font-weight: 600;
 }
 .add{
     display: flex;
+    justify-content: space-between;
 }
 
 .add img{
@@ -27,6 +55,11 @@
     display: flex;
     align-self: center;
     justify-items: center;
+}
+.bottom-info{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
 }
 .motoboy{
     display: flex;
@@ -52,4 +85,45 @@
     padding: 2.5rem;
     border-radius: 6px 6px 0 0;
     margin-bottom: -5vh;
+    font-weight: 500;
+}
+
+@media(width>1024px){
+    main{
+        flex-direction: row;
+        padding: 5rem;
+        align-items: flex-start;
+    }
+
+    .product-img img{
+        width: fit-content;
+        max-height: 50vh;
+    }
+
+    main .text{
+        box-shadow: 0px 0px 10px #d9d9d9;
+        width: fit-content;
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .product-title{font-size: 3rem;}
+    .product-desc{
+        font-size: 1.3rem;
+        max-width: 55vw;
+    }
+    .button{
+        width: fit-content;
+        padding: 2rem 8rem;
+        border-radius: 6px;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .bottom-info{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5vh;
+        padding: 0 2rem;
+    }
 }

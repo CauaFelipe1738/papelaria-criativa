@@ -100,20 +100,6 @@ input{
 .quick-login{
     margin: 1rem 2rem;
 }
-
-footer{
-    background-color: #115695;
-    color: #fff;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    width: 100vw;
-    padding: 2rem;
-    overflow: hidden;
-}
-
 @media(width>1024px){
     main{flex-direction: row;}
 
