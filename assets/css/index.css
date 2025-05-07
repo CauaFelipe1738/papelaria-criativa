@@ -72,7 +72,7 @@ main{
 }
 
 @media(width>1024px){
-    .banner{margin-bottom: 20vh;}
+    .banner{margin-bottom: 8vh;}
 
     .banner img{height: 40vh;}
 
